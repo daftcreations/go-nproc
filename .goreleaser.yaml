@@ -30,6 +30,8 @@ archives:
   - id: archives
     format: tar.gz
     replacements:
+      freebsd: FreeBSD
+      openbsd: OpenBSD
       darwin: Darwin
       linux: Linux
       windows: Windows
@@ -41,6 +43,8 @@ archives:
   - id: bins
     format: binary
     replacements:
+      openbsd: OpenBSD
+      freebsd: FreeBSD
       darwin: Darwin
       linux: Linux
       windows: Windows
@@ -59,3 +63,19 @@ changelog:
 
 sboms:
   - artifacts: archive
+
+# signs:
+#   - cmd: cosign
+#     signature: "${artifact}_sig"
+#     artifacts: all
+#     env:
+#       - COSIGN_EXPERIMENTAL=1
+#     stdin: "{{ .Env.GPG_PASSWORD }}"
+#     args:
+#       - sign-blob
+#       - '--output-certificate=${certificate}'
+#       - '--output-signature=${signature}'
+#       - '${artifact}'
+#     stdin_file: ./.password
+#     certificate: '{{ trimsuffix .Env.artifact ".tar.gz" }}.pem'
+#     output: true
