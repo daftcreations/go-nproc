@@ -21,6 +21,33 @@ go-nproc Usage
     	Get current version
 ```
 
+> gnu nproc
+> ```shell
+> $ nproc --help
+> Usage: nproc [OPTION]...
+> Print the number of processing units available to the current process,
+> which may be less than the number of online processors
+>
+>       --all      print the number of installed processors
+>       --ignore=N  if possible, exclude N processing units
+>       --help     display this help and exit
+>       --version  output version information and exit
+>
+> GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+> Report nproc translation bugs to <https://translationproject.org/team/>
+> Full documentation at: <https://www.gnu.org/software/coreutils/nproc>
+> or available locally via: info '(coreutils) nproc invocation'
+> ```
+
+## Install
+
+```shell
+## binary
+wget -O go-nproc https://github.com/pratikbin/go-nproc/releases/download/0.0.1/go-nproc_0.0.1_$(uname -s)_$(uname -m)
+chmod +x ./go-nproc
+./go-nproc
+```
+
 ## Build
 
 `go build`
