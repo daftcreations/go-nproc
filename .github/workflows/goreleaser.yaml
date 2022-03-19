@@ -15,7 +15,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - run: |
+      - shell: bash
+        run: |
+          set -x
           git fetch --force --tags
           tmp_dir="$(mktemp -d)"
           cd tmp_dir
