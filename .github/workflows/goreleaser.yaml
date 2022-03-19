@@ -24,6 +24,7 @@ jobs:
           cd /tmp/upx
           wget https://github.com/upx/upx/releases/download/v3.96/upx-3.96-amd64_linux.tar.xz -O - | tar -C . -xJf -
           cp $(find . -name 'upx' -type f) /usr/local/bin/upx
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
       - uses: actions/setup-go@v2
         with:
