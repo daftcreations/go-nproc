@@ -22,6 +22,7 @@ go-nproc Usage
 ```
 
 > gnu nproc
+>
 > ```shell
 > $ nproc --help
 > Usage: nproc [OPTION]...
@@ -32,22 +33,42 @@ go-nproc Usage
 >       --ignore=N  if possible, exclude N processing units
 >       --help     display this help and exit
 >       --version  output version information and exit
->
-> GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
-> Report nproc translation bugs to <https://translationproject.org/team/>
-> Full documentation at: <https://www.gnu.org/software/coreutils/nproc>
-> or available locally via: info '(coreutils) nproc invocation'
-> ```
 
 ## Install
 
+Supported platforms
+
+- Darwin(Mac) (`arm64`, `x86_64`)
+- Linux (`arm64`, `armv6`, `armv7`, `i386`, `x86_64`)
+- OpenBSD (`arm64`, `arm6`, `armv7`, `i386`, `x86_64`)
+- FreeBSD (`arm64`, `arm6`, `armv7`, `i386`, `x86_64`)
+- Windows (`armv6`, `armv7`, `i386`, `x86_64`)
+- Solaris (`x86_64`)
+
 ```shell
-## binary
+## For linux and mac
+
+# Using wget
 wget -O go-nproc https://github.com/pratikbin/go-nproc/releases/download/0.0.1/go-nproc_0.0.1_$(uname -s)_$(uname -m)
+
+# OR
+
+# Using curl
+curl -o go-nproc https://github.com/pratikbin/go-nproc/releases/download/0.0.1/go-nproc_0.0.1_$(uname -s)_$(uname -m)
+
 chmod +x ./go-nproc
 ./go-nproc
+```
+
+```shell
+## For winodws
+# Scrip work in progress, till you can download files from release page as per your architecture
 ```
 
 ## Build
 
 `go build`
+
+---
+
+> > *May the source be with you*
