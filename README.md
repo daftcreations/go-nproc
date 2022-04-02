@@ -49,12 +49,12 @@ Supported platforms
 ## For linux and mac
 
 # Using wget
-wget -O go-nproc https://github.com/pratikbin/go-nproc/releases/download/0.0.1/go-nproc_0.0.1_$(uname -s)_$(uname -m)
+wget -O go-nproc https://github.com/pratikbin/go-nproc/releases/download/latest/go-nproc_$(uname -s)_$(uname -m)
 
 # OR
 
 # Using curl
-curl -o go-nproc https://github.com/pratikbin/go-nproc/releases/download/0.0.1/go-nproc_0.0.1_$(uname -s)_$(uname -m)
+curl -o go-nproc https://github.com/pratikbin/go-nproc/releases/download/latest/go-nproc_$(uname -s)_$(uname -m)
 
 chmod +x ./go-nproc
 ./go-nproc
@@ -68,6 +68,10 @@ chmod +x ./go-nproc
 ## Build
 
 `go build`
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/pratikbin/go-nproc.svg)](https://starchart.cc/pratikbin/go-nproc)
 
 ---
 
