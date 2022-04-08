@@ -1,3 +1,3 @@
-module github.com/pratikbin/go-nproc
+module github.com/daftcreations/go-nproc
 
 go 1.17
