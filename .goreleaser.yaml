@@ -63,9 +63,6 @@ changelog:
       - "^docs:"
       - "^test:"
 
-sboms:
-  - artifacts: archive
-
 # signs:
 #   - cmd: cosign
 #     signature: "${artifact}_sig"
