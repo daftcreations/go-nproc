@@ -1,3 +1,3 @@
 module github.com/daftcreations/go-nproc
 
-go 1.17
+go 1.18

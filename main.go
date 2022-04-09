@@ -29,7 +29,10 @@ func main() {
 	flag.Parse()
 
 	if getVersion {
-		fmt.Printf("go-nproc v%s (sha: %s) (BuildTime: %s)\n\nWritten by Pratik (github: pratikbin)\n",
+		fmt.Printf(`go-nproc v%s (sha: %s) (BuildTime: %s)
+
+Written by DaftCreations (github: daftcreations)
+`,
 			Version, CommitSha, BuildTime)
 		return
 	}
