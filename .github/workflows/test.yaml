@@ -1,0 +1,37 @@
+name: test
+
+on:
+  workflow_run:
+    workflows: ["goreleaser"]
+    types:
+      - completed
+
+jobs:
+  integration-testing:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - run: curl -fsSL instl.sh/daftcreations/gcps/linux | bash
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+
+      - run: |
+          if [[ "$(go-nproc)" == "$(nproc)" ]]; then
+            exit 0
+          else
+            exit 1
+          fi
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+
+      - run: curl -fsSL instl.sh/daftcreations/gcps/macos | bash
+        if: ${{ matrix.os == 'macos-latest' }}
+
+      - name: test in ${{ matrix.os }}
+        run: |
+          if [[ "$(go-nproc)" == "$(sysctl -n hw.ncpu)" ]]; then
+            exit 0
+          else
+            exit 1
+          fi
