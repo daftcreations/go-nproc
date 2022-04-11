@@ -23,7 +23,7 @@ func main() {
 
 	flag.BoolVar(&all, "all", true, "print the number of installed processors")
 	flag.BoolVar(&help, "help", false, "display this help and exit")
-	flag.BoolVar(&getVersion, "version", false, "Get current version")
+	flag.BoolVar(&getVersion, "version", false, "get version")
 	flag.IntVar(&ignore, "ignore", 0, "if possible, exclude N processing units")
 
 	flag.Parse()
