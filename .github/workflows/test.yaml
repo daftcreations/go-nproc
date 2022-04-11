@@ -5,9 +5,10 @@ on:
     workflows: ["goreleaser"]
     types:
       - completed
+  workflow_dispatch:
 
 jobs:
-  integration-testing:
+  instl-test:
     strategy:
       fail-fast: false
       matrix:
