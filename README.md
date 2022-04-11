@@ -71,14 +71,6 @@ curl -fsSL instl.sh/daftcreations/go-nproc/macos | bash
 iwr -useb instl.sh/daftcreations/go-nproc/windows | iex
 ```
 
-## Build
-
-`go build`
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/pratikbin/go-nproc.svg)](https://starchart.cc/pratikbin/go-nproc)
-
 ---
 
 [![Discrod](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/960581263264219186/960618259244257330)
