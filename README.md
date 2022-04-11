@@ -3,7 +3,7 @@
 [![Go](https://img.shields.io/badge/--00ADD8?logo=go&logoColor=ffffff)](https://golang.org/)
 [![GitHub license](https://img.shields.io/github/license/daftcreations/go-nproc?style=for-the-badge)](https://github.com/daftcreations/go-nproc/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/v/tag/daftcreations/go-nproc?style=for-the-badge)](https://github.com/daftcreations/go-nproc/releases)
-[![Release workflow](https://img.shields.io/github/workflow/status/daftcreation/go-nproc/goreleaser?style=for-the-badge)](https://github.com/daftcreations/go-nproc/actions/workflows/release.yml)
+[![Release workflow](https://img.shields.io/github/workflow/status/daftcreation/go-nproc/goreleaser?style=for-the-badge)](https://github.com/daftcreations/go-nproc/actions/workflows/goreleaser.yml)
 ![Lines of code](https://img.shields.io/tokei/lines/github/daftcreations/go-nproc?label=Lines%20of%20code&style=for-the-badge)
 [![Chat](https://img.shields.io/discord/960581263264219186?label=%20&logo=discord&style=for-the-badge)](https://discord.com/channels/960581263264219186/960618259244257330)
 
