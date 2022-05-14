@@ -1,19 +1,24 @@
 # go-nproc
 
-[![Go](https://img.shields.io/badge/--00ADD8?logo=go&logoColor=ffffff)](https://golang.org/)
-[![GitHub license](https://img.shields.io/github/license/daftcreations/go-nproc?style=for-the-badge)](https://github.com/daftcreations/go-nproc/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/v/tag/daftcreations/go-nproc?style=for-the-badge)](https://github.com/daftcreations/go-nproc/releases)
-[![Release workflow](https://img.shields.io/github/workflow/status/daftcreation/go-nproc/goreleaser?style=for-the-badge)](https://github.com/daftcreations/go-nproc/actions/workflows/goreleaser.yml)
-![Lines of code](https://img.shields.io/tokei/lines/github/daftcreations/go-nproc?label=Lines%20of%20code&style=for-the-badge)
-[![Chat](https://img.shields.io/discord/960581263264219186?label=%20&logo=discord&style=for-the-badge)](https://discord.com/channels/960581263264219186/960618259244257330)
+<p align="center">
+  <a href="https://github.com/daftcreations/go-nproc/blob/master/LICENSE"><img src="https://img.shields.io/github/license/daftcreations/go-nproc?style=flat-square" alt="Licence"/></a>
+  <a href="https://github.com/daftcreations/go-nproc/actions/workflows/release.yml"><img src="https://img.shields.io/github/workflow/status/daftcreation/zipper/goreleaser?style=flat-square" alt="build"/></a>
+  <a href="https://github.com/daftcreations/go-nproc/releases"><img src="https://img.shields.io/github/v/tag/daftcreations/go-nproc?style=flat-square" alt="tag"/></a>
+  <a href="https://goreportcard.com/report/github.com/pratikbalar/zipper"><img src="https://goreportcard.com/badge/github.com/pratikbin/zipper?label=Lines%20of%20code&style=flat-square" alt="go-report"/></a>
+  <a href=""><img src="https://img.shields.io/tokei/lines/github/daftcreations/go-nproc?label=Lines%20of%20code&style=flat-square" alt="Lines of code"/></a>
+  <a href="https://discord.com/channels/960581263264219186/960618259244257330"><img src="https://img.shields.io/discord/960581263264219186?label=%20&logo=discord&style=flat-square" alt="Discrod"/></a></br
+  <a style="text-decoration: none" href="https://github.com/daftcreations/go-nproc/releases"><img src="https://img.shields.io/badge/platform-windows%20%7C%20macos%20%7C%20linux-informational?style=for-the-badge" alt="Downloads"></a>
+</p>
 
-OS agnostic nproc
+OS agnostic nproc (gnu nproc in go)
 
-> Motivation: Trying macos first time and I can't find `nproc` utility so created one. Tried to create it as similar as [GNU nproc](https://www.gnu.org/software/coreutils/manual/html_node/nproc-invocation.html)
+> size < 400KB
+
+> Motivation: Trying macos first time and I can't find `nproc` utility which will gives you no of logical processor on your system so created one. Tried to create it as similar as [GNU nproc](https://www.gnu.org/software/coreutils/manual/html_node/nproc-invocation.html)
 >
 > The minimal difference is, this will use single dash `-` for cli flags instead of `--` which GNU uses. I wanted to use standard flags library to keep application simple
 
-## Run
+## Usage
 
 ```shell
 $ go-nproc -help
@@ -43,7 +48,18 @@ go-nproc Usage
 
 ## Install
 
-Supported platforms
+```shell
+## Linux
+curl -fsSL instl.sh/daftcreations/go-nproc/linux | bash
+
+## MacOS (m1 and intel)
+curl -fsSL instl.sh/daftcreations/go-nproc/macos | bash
+
+## Windows
+iwr -useb instl.sh/daftcreations/go-nproc/windows | iex
+```
+
+Supported platforms, Find binary from release page
 
 - Darwin(Mac) (`arm64`, `x86_64`) - *tested*
 - Linux (`arm64`, `armv6`, `armv7`, `i386`, `x86_64`)  *tested*
@@ -73,19 +89,25 @@ iwr -useb instl.sh/daftcreations/go-nproc/windows | iex
 
 ---
 
-[![Discrod](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/channels/960581263264219186/960618259244257330)
-[![Daft Creation](https://img.shields.io/youtube/channel/subscribers/UCDrfHGsm6bJI7Sli7vlcteA?label=YT&logo=youtube&style=for-the-badge)](https://www.youtube.com/c/DaftCreation/playlists)
-[![Twitter](https://img.shields.io/twitter/follow/daftcreation?logo=twitter&style=for-the-badge)](https://twitter.com/daftcreation)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/daft.creations/)
+<div align="center">
+    <a href="https://discord.com/channels/960581263264219186/960618259244257330"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/></a>
+    <a href="https://www.youtube.com/c/DaftCreation/playlists"><img src="https://img.shields.io/youtube/channel/subscribers/UCDrfHGsm6bJI7Sli7vlcteA?label=YT&logo=youtube&style=for-the-badge"/></a>
+    <a href="https://twitter.com/daftcreations"><img src="https://img.shields.io/twitter/follow/daftcreation?logo=twitter&style=for-the-badge"/></a>
+    <a href="https://www.instagram.com/daft.creations/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+</div>
 
-### Contributors
-
-![Contributors](https://contrib.rocks/image?repo=daftcreations/go-nproc&columns=80)
+<div align="center">
+    <div style="display:flex; justify-content:space-around;">
+        <h3 style="margin:-5px 10px 5px;">Contributors</h3>
+        <hr align="left" width="20%">
+    </div>
+    <img src="https://contrib.rocks/image?repo=daftcreations/go-nproc&columns=80" style="width:150px;"/>
+</div>
 
 ### Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/daftcreations/go-nproc.svg)](https://starchart.cc/daftcreations/go-nproc)
+<center>
+    <a href="https://starchart.cc/daftcreations/go-nproc"><img src="https://starchart.cc/daftcreations/go-nproc.svg" width="80%"/></a>
+</center>
 
----
-
-> > *May the source be with you*
+> *May the source be with you*

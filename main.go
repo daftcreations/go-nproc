@@ -22,20 +22,23 @@ func main() {
 	)
 
 	flag.BoolVar(&all, "all", true, "print the number of installed processors")
-	flag.BoolVar(&help, "help", false, "display this help and exit")
+	flag.BoolVar(&help, "help", false, "display help and exit")
 	flag.BoolVar(&getVersion, "version", false, "get version")
 	flag.IntVar(&ignore, "ignore", 0, "if possible, exclude N processing units")
 
 	flag.Parse()
 
 	if getVersion {
-		fmt.Printf(`go-nproc v%s (sha: %s) (BuildTime: %s)
+		fmt.Printf(`go-nproc v%s / sha: %s / BuildTime: %s
 
-Written by DaftCreations (github: daftcreations)
+Made by DaftCreations, Opensource org For People/Creator, By People/Creator.
+
+https://github.com/daftcreations
 `,
 			Version, CommitSha, BuildTime)
 		return
 	}
+
 	if help {
 		fmt.Println("go-nproc Usage")
 		flag.PrintDefaults()

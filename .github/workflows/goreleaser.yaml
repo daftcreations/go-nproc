@@ -12,11 +12,13 @@ jobs:
   goreleaser:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checout the code
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
-      - shell: bash
+      - name: Install dependencies
+        shell: bash
         run: |
           set -x
           git fetch --force --tags
@@ -26,11 +28,12 @@ jobs:
           cp $(find . -name 'upx' -type f) /usr/local/bin/upx
           curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
-      - uses: actions/setup-go@v2
-        with:
-          go-version: 1.18
+      - name: Setup the environment
+        uses: actions/setup-go@v2
+        with: { go-version: 1.18 }
 
-      - uses: goreleaser/goreleaser-action@v2
+      - name: goreleaser
+        uses: goreleaser/goreleaser-action@v2
         with:
           version: latest
           args: release --rm-dist
