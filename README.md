@@ -20,6 +20,8 @@ OS agnostic nproc (gnu nproc in go)
 
 ## Usage
 
+<img src="docs/demo.gif" width="80%">
+
 ```shell
 $ go-nproc -help
 go-nproc Usage
