@@ -59,6 +59,12 @@ curl -fsSL instl.sh/daftcreations/go-nproc/macos | bash
 iwr -useb instl.sh/daftcreations/go-nproc/windows | iex
 ```
 
+or
+
+```shell
+go install github.com/daftcreations/go-nproc@latest
+```
+
 Supported platforms, Find binary from release page
 
 - Darwin(Mac) (`arm64`, `x86_64`) - *tested*
@@ -67,25 +73,6 @@ Supported platforms, Find binary from release page
 - FreeBSD (`arm64`, `arm6`, `armv7`, `i386`, `x86_64`)  *tested*
 - Windows (`armv6`, `armv7`, `i386`, `x86_64`)
 - Solaris (`x86_64`)
-
-Golang
-
-```shell
-go install github.com/daftcreations/go-nproc@latest
-```
-
-OR
-
-```shell
-## Linux
-curl -fsSL instl.sh/daftcreations/go-nproc/linux | bash
-
-## MacOS (m1 and intel)
-curl -fsSL instl.sh/daftcreations/go-nproc/macos | bash
-
-## Windows
-iwr -useb instl.sh/daftcreations/go-nproc/windows | iex
-```
 
 ---
 
@@ -101,7 +88,7 @@ iwr -useb instl.sh/daftcreations/go-nproc/windows | iex
         <h3 style="margin:-5px 10px 5px;">Contributors</h3>
         <hr align="left" width="20%">
     </div>
-    <img src="https://contrib.rocks/image?repo=daftcreations/go-nproc&columns=80" style="width:150px;"/>
+    <img src="https://contrib.rocks/image?repo=daftcreations/go-nproc&columns=80" style="width:70px;"/>
 </div>
 
 ### Stargazers over time
